@@ -13,38 +13,38 @@ from logging.handlers import RotatingFileHandler
 TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", ""))
+APP_ID = int(os.environ.get("APP_ID", "22768311"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "")
+API_HASH = os.environ.get("API_HASH", "702d8884f48b42e865425391432b3794")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001995978690"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002436399053")
 
 # NAMA OWNER
-OWNER = os.environ.get("OWNER", "VeldXd")
+OWNER = os.environ.get("OWNER", "IamRealDevil")
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "6497757690"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "6040503076"))
 
 #Port
 PORT = os.environ.get("PORT", "8030")
 
 #Database
-DB_URI = os.environ.get("DATABASE_URL", "")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://gamerspyer2023:HpcyTyfkjBYvLGi4@cluster0.dogml.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DB_NAME = os.environ.get("DATABASE_NAME", "Cluster0")
 
 #force sub channel id, if you want enable force sub
-FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001473043276"))
-FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1001644866777"))
+FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001999825163"))
+FORCE_SUB_CHANNEL2 = int(os.environ.get("FORCE_SUB_CHANNEL2", "-1002059068082"))
 
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "<b>ʙᴀᴋᴋᴀᴀᴀ!! {first}</b>\n\nI can provide files for @Team_Netflix & @Anime_Cruise_Netflix\nchannel Members!!\n\nᴊᴜꜱᴛ ᴅᴏɴ'ᴛ ᴏᴠᴇʀʟᴏᴀᴅ ᴍᴇ <a href=https://graph.org/file/6ef6eb1f0aed4920adaf2.jpg>🫣.</a></b>")
+START_MSG = os.environ.get("START_MESSAGE", "<b>ʙᴀᴋᴋᴀᴀᴀ!! {first}</b>\n\nI can provide files for @CrunchyRollOfficialChannel\nMembers!!\n\nᴊᴜꜱᴛ ᴅᴏɴ'ᴛ ᴏᴠᴇʀʟᴏᴀᴅ ᴍᴇ <a href=https://graph.org/file/6ef6eb1f0aed4920adaf2.jpg>🫣.</a></b>")
 try:
     ADMINS=[6376328008]
-    for x in (os.environ.get("ADMINS", "5115691197 6273945163 6103092779 5231212075").split()):
+    for x in (os.environ.get("ADMINS", "5115691197 6273965163 6103292779 5231212775").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
